@@ -1,14 +1,14 @@
 #include <stdio.h>
 
-//10Áø¼ö -> 2Áø¼ö º¯È¯
+//10ì§„ìˆ˜ -> 2ì§„ìˆ˜ ë³€í™˜
 
 void print_binary(int n) {
     if (n == 0) { printf("0"); return; }
     int bits[32];
     int count = 0;
     while (n > 0) {
-        bits[count++] = n % 2; // ³ª¸ÓÁö ÀúÀå (% = ³ª¸ÓÁö ¿¬»ê)
-        n /= 2; // 2·Î ³ª´©±â
+        bits[count++] = n % 2; // ë‚˜ë¨¸ì§€ ì €ì¥ (% = ë‚˜ë¨¸ì§€ ì—°ì‚°)
+        n /= 2; // 2ë¡œ ë‚˜ëˆ„ê¸°
     }
     for (int i = count - 1; i >= 0; i--)
         printf("%d", bits[i]);
@@ -18,10 +18,10 @@ void print_binary(int n) {
 int main() {
     int num;
 
-    printf("10Áø¼ö ÀÔ·Â: ");
-    scanf_s("%d", &num); //Å°º¸µå·Î ¼ıÀÚ ÀÔ·Â¹Ş±â
+    printf("10ì§„ìˆ˜ ì…ë ¥: ");
+    scanf_s("%d", &num); //í‚¤ë³´ë“œë¡œ ìˆ«ì ì…ë ¥ë°›ê¸°
 
-    printf("2Áø¼ö: ");
+    printf("2ì§„ìˆ˜: ");
     print_binary(num);
     printf("\n");
 
