@@ -1,5 +1,5 @@
 /* file: printcost.c
-	cost ╟╙ю╩ цБ╥бго╢б га╥н╠в╥╔
+	cost б╟б╙ц─б╩ ц┐ц╒б╥ц┌ц┤ц▐б╢ц┌ ц┤ц│б╥ц▌б╠ц≈б╥б╔
 */
 #include <stdio.h>
 
